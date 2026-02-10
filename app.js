@@ -31,6 +31,10 @@ var swiper = new Swiper(".ltab ", {
             slidesPerView: 2,
             spaceBetween: 5,
         },
+        360: {
+            slidesPerView: 1,
+            spaceBetween: 5,
+        },
 
     },
 
@@ -55,15 +59,19 @@ var swiper = new Swiper(".ttab ", {
     },
     breakpoints: {
         640: {
-            slidePreview: 2,
+            slidePreview: 1,
             spaceBetween: 20,
         },
         764: {
-            slidePreview: 4,
+            slidePreview: 1,
             spaceBetween: 40,
         },
         1024: {
-            slidePreview: 5,
+            slidePreview: 1,
+            spaceBetween: 50,
+        },
+        360: {
+            slidePreview: 1,
             spaceBetween: 50,
         },
 
