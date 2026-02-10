@@ -1,0 +1,689 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "poppins", sans-serif;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.paddings {
+    padding: 1.5rem;
+}
+
+.flexend {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flexCenter {
+    display: flex;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flexColStart {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.flexColEnd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.flexColCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerWidth {
+    width: 100%;
+}
+
+
+.button {
+    font-weight: 500;
+    padding: 0.6rem 1.4rem;
+    color: white;
+    background-color: #1f3ef2;
+    border: 0;
+    outline: 9;
+    border-radius: 4px;
+    transition: all 300ms ease-in-out;
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #4066ff;
+    background-color: white;
+}
+
+.orangetext {
+    color: orange;
+    font-weight: 1.5rem;
+    font-weight: 600;
+}
+
+.pritext {
+    color: #1f3ef2;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.sectext {
+    color: rgba(140 139 139);
+    font-weight: 700;
+}
+
+.search-bar {
+    background-color: white;
+    border-radius: 5px;
+    border: 3px solid rgba(120, 120, 120, 0.12);
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.search-bar input {
+    outline: none;
+    border: none;
+}
+.search-bar i{
+    
+    color: #1f3ef2;
+    font-size: 20px;
+}
+
+header {
+
+
+    z-index: 4;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+
+}
+
+.hwrap {
+    z-index: 99;
+    color: white;
+
+}
+.homy{
+    font-weight: bolder;
+    font-family: "Brush Script MT",cursive;
+    font-size: 22px;
+}
+
+
+.hcon {
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #cccc;
+    background-color: #000;
+
+}
+
+.hcon img {
+    background-color:#4066ff;
+}
+
+.h-menu {
+    gap: 1rem;
+    text-transform: capitalize;
+    font-size: 14px;
+
+}
+
+.h-menu:hover {
+    cursor: pointer;
+}
+
+.herowrap {
+    color: white;
+    position: relative;
+    padding-bottom: 3rem;
+    background-color: #000;
+ 
+    z-index: 1;
+    opacity: 1;
+
+
+}
+
+.herocon {
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.img-con {
+    width: 21rem;
+    height: 26rem;
+    overflow: hidden;
+    border-radius: 15rem 15rem 0 0;
+    border: 3px solid rgba(255, 255, 255, 0.12);
+}
+
+.hleft {
+    gap: 2rem;
+}
+
+.htitle {
+    position: relative;
+    z-index: 1;
+}
+
+.htitle h1 {
+    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 4rem;
+}
+
+.c-con {
+    justify-content: space-around;
+    gap: 6rem;
+}
+
+.c-con img {
+    width: 7rem;
+}
+
+
+
+.r-head {
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+
+
+}
+
+.rmenu {
+    margin-left: 20px;
+}
+
+.rmenu li {
+    list-style: none;
+
+
+
+}
+
+
+.menulist {
+    gap: 1rem;
+}
+
+.button2 {
+    background-color: #ccc;
+    color: black;
+}
+
+button.active {
+    color: white;
+    background-color: #1f3ef2
+}
+
+.rmenu .ccon {
+    justify-content: space-around;
+
+}
+
+.r-card {
+    gap: 1.9em;
+
+}
+
+
+.product-card {
+
+    border-radius: 10px;
+
+    max-width: 220px;
+    min-height: 250px;
+
+    transition: all 300ms ease-in-out;
+
+
+    box-shadow: 0px 1px 4x rgba(0, 0, 0, 0.16);
+    border: 1px solid #cccc;
+    overflow: hidden;
+}
+
+.product-card .img-container {
+
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    min-height: 160px;
+
+}
+
+
+.product-card .img-container img {
+
+
+    object-fit: cover;
+    width: 100%;
+
+    height: 100%;
+
+
+}
+
+.product-card .text {
+    width: 200px;
+    font-size: 12px;
+    margin-top: 12px;
+    height: 100%;
+    margin-left: 10px;
+
+}
+
+.product-card .text .modern {
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.rtab {
+    display: none;
+}
+
+.rtab.active {
+    display: block;
+    background-color: transparent;
+}
+
+.vcon .img-con {
+    border: 8px solid rgb(232 232 232 / 93%);
+    margin-left: 20px;
+
+}
+
+.vcon div {
+    flex: 1;
+}
+
+.vright {
+    gap: .7rem;
+    margin-left: 20px;
+}
+
+.accordion {
+
+
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: 1rem;
+    background-color: #fff;
+    color: #1f3ef2;
+
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    color: #000;
+
+    display: none;
+    overflow: hidden;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.ltab {
+    gap: 1rem;
+}
+
+.pro {
+
+
+    max-width: 210px;
+    width: 98%;
+    margin-top: 20px;
+
+}
+
+.pro .img-container {
+    height: 250px;
+}
+
+.btn {
+    background-color: white;
+
+}
+
+.swiper {
+    width: 80%;
+    height: 250px;
+    margin-top: 20px;
+
+
+
+
+}
+
+.swiper-slide {
+
+    font-size: 18px;
+    text-align: center;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.lcon {
+    width: 100%;
+    height: 60%;
+    padding: 20px;
+
+
+
+}
+
+.l-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.l-card .img-container {
+    width: 100%;
+    height: 100%;
+
+}
+
+.l-head {
+    margin-left: 20px;
+}
+
+
+
+.l-card .img-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    object-fit: cover;
+    display: block;
+
+}
+
+.l-card .text {
+    position: absolute;
+    bottom: 10px;
+    background-color: #fff;
+    width: 90%;
+    padding: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.l-card .text h4 {
+    font-size: 18px;
+}
+
+.l-card .text p {
+    font-size: 16px;
+    color: grey;
+}
+
+.review {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+.reiewcon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.titlecon {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.rcon2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: -10%;
+
+}
+
+.tcard {
+    border: 1px solid #ccc;
+
+
+
+    padding: 20px 0px;
+
+    border-radius: 7px;
+
+
+}
+
+.tcard .center,
+.tcard .bottom {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.contact {
+    margin-top: -200px;
+    margin-left: 20px;
+
+}
+
+.ccon {
+    justify-content: space-around;
+}
+
+.ccon div {
+    flex: 1;
+}
+
+
+
+.cright {
+    width: 100%;
+    margin-left: 150px;
+   
+}
+
+
+
+.contactmodes {
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.contactmodes .row {
+    gap: 1.5rem;
+}
+
+.mode {
+    width: 16rem;
+    padding: 1rem;
+    border: 0.8px solid rgba(120, 120, 120, 0.12);
+    border-radius: 5px;
+    gap: 1rem;
+    transition: all 300ms ease-in-out;
+}
+
+.mode .button {
+    width: 100%;
+    background-color: #ccc;
+    color: #1f3ef2;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.mode .details .light {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.mode:hover {
+    scale: 1.1;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.16);
+}
+
+.mode .button:hover {
+    color: white;
+    background-color: #1f3ef2;
+    scale: 0.8;
+}
+
+
+.fcon {
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.fleft {
+    gap: 1rem;
+}
+
+.fmenu {
+    gap: 1.5rem;
+    margin-top: 1rem;
+    font-weight: 500;
+    font-weight: 600;
+}
+
+.menu-icon {
+    display: none;
+}
+.lightg{
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .h-menu {
+        color: #000;
+        position: absolute;
+        top: 3rem;
+        right: 1rem;
+
+        background-color: white;
+        flex-direction: column;
+        font-weight: 500;
+        padding: 3rem;
+        gap: 2rem;
+        border-radius: 10px;
+        align-items: flex-start;
+        transition: all 300ms ease-in-out;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+        z-index: 99;
+
+    }
+}
+
+@media(max-width:640px) {
+
+
+    .htitle h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+
+    }
+
+    .img-container {
+        width: 95%;
+        height: 25rem;
+    }
+
+    .hright {
+        width: 100%;
+    }
+
+    .swipe {
+        width: 100%;
+    }
+}
+
+@media(max-width:430px) {
+
+    .button {
+
+        padding: 0.3rem .7rem;
+
+    }
+
+    .rmenu {
+        margin-left: 7px;
+    }
+    .pritext{
+        font-size: 1.4rem;
+    }
+    
+    .cright{
+        margin-left: 0px;
+    }
+    .small{
+        font-size: .9rem;
+    }
+    
+}
