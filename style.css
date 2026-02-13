@@ -612,7 +612,7 @@ button.active {
     margin-bottom: 10px;
     font-weight: 600;
 }
-.close{
+#close{
     display: none;
 }
 
